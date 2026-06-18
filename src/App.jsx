@@ -137,6 +137,19 @@ export default function App() {
       )}
 
       <main className="max-w-[1680px] mx-auto px-4 md:px-6 py-6 flex flex-col gap-6">
+        <div className="bg-pitch/[0.04] border border-slate-line rounded-lg px-4 py-3.5 space-y-1">
+          <p className="text-[13.5px] font-semibold text-ink">
+            See the actual bracket, not "A2 vs C1"
+          </p>
+          <p className="text-[12.5px] text-slate-muted leading-relaxed">
+            Most sites show the knockout bracket as boring placeholders like "Runner-up Group F".
+            This visualizer replaces all of that with real team names based on the current standings,
+            so you can actually see who plays who in the Round of 32 and beyond. Drag teams up or
+            down to simulate different group finishes, edit match stats to reflect live results,
+            and click through the bracket to play out any scenario you want.
+          </p>
+        </div>
+
         <div className="flex items-start gap-2 text-slate-muted text-[12px] bg-white/50 border border-slate-line rounded-md px-3 py-2">
           <Info size={14} className="flex-shrink-0 mt-0.5" />
           <p>
