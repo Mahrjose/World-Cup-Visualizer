@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100vh;
+  background: #F7F5EF;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Subtle pitch-line texture for the page background */
+.pitch-texture {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(11, 61, 46, 0.025) 0px,
+      rgba(11, 61, 46, 0.025) 1px,
+      transparent 1px,
+      transparent 64px
+    );
+}
+
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D5C7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5C6B63;
+}
+
+/* Inline-edit number input: strip browser chrome so it reads as plain text until focused */
+.stat-input {
+  width: 2.1rem;
+  text-align: center;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 600;
+  -moz-appearance: textfield;
+}
+.stat-input::-webkit-outer-spin-button,
+.stat-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.stat-input:hover {
+  border-color: #D9D5C7;
+  background: rgba(217, 213, 199, 0.3);
+}
+.stat-input:focus {
+  outline: none;
+  border-color: #0B3D2E;
+  background: white;
+}
+
+/* Bracket connector glow pulse */
+@keyframes bracket-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.65; }
+}
+.bracket-glow {
+  animation: bracket-pulse 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .bracket-glow {
+    animation: none;
+  }
+}
