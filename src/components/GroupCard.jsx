@@ -16,13 +16,13 @@ import { GripVertical, RotateCcw } from 'lucide-react';
 import Flag from './Flag';
 
 const STAT_FIELDS = [
-  { key: 'mp', label: 'MP', editable: false },
+  { key: 'mp', label: 'MP', editable: false, hideOnMobile: true },
   { key: 'w', label: 'W', editable: true },
   { key: 'd', label: 'D', editable: true },
   { key: 'l', label: 'L', editable: true },
-  { key: 'gf', label: 'GF', editable: true },
-  { key: 'ga', label: 'GA', editable: true },
-  { key: 'gd', label: 'GD', editable: false },
+  { key: 'gf', label: 'GF', editable: true, hideOnMobile: true },
+  { key: 'ga', label: 'GA', editable: true, hideOnMobile: true },
+  { key: 'gd', label: 'GD', editable: false, hideOnMobile: true },
   { key: 'pts', label: 'Pts', editable: false, emphasize: true },
 ];
 
@@ -104,7 +104,7 @@ function SortableRow({ team, isOverridden, onEdit }) {
         </div>
       </td>
       {STAT_FIELDS.map((f) => (
-        <td key={f.key} className="text-center py-1.5 px-0.5">
+        <td key={f.key} className={`text-center py-1.5 px-0.5${f.hideOnMobile ? ' hidden sm:table-cell' : ''}`}>
           <StatCell team={team} field={f} onEdit={onEdit} />
         </td>
       ))}
@@ -151,7 +151,7 @@ export default function GroupCard({ groupLetter, teams, isManual, onReorder, onE
               <th className="w-5"></th>
               <th className="text-left pl-1 py-1 font-medium">Team</th>
               {STAT_FIELDS.map((f) => (
-                <th key={f.key} className="font-medium py-1 px-0.5">
+                <th key={f.key} className={`font-medium py-1 px-0.5${f.hideOnMobile ? ' hidden sm:table-cell' : ''}`}>
                   {f.label}
                 </th>
               ))}

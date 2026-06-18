@@ -83,12 +83,12 @@ export default function App() {
               </p>
             </div>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             <button
               onClick={handleSync}
               disabled={syncing}
               title="Fetch live standings from ESPN"
-              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle disabled:opacity-50 text-xs font-medium px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
+              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle disabled:opacity-50 text-xs font-medium px-2 sm:px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
             >
               <RefreshCw size={14} className={syncing ? 'animate-spin' : ''} />
               <span className="hidden sm:inline">{syncing ? 'Syncing…' : 'Sync Live'}</span>
@@ -96,14 +96,16 @@ export default function App() {
             <button
               onClick={undo}
               disabled={!canUndo}
-              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle disabled:opacity-30 disabled:hover:text-cream/90 text-xs font-medium px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
+              title="Undo"
+              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle disabled:opacity-30 disabled:hover:text-cream/90 text-xs font-medium px-2 sm:px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
             >
               <Undo2 size={14} />
               <span className="hidden sm:inline">Undo</span>
             </button>
             <button
               onClick={() => fileInputRef.current?.click()}
-              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle text-xs font-medium px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
+              title="Load JSON"
+              className="flex items-center gap-1.5 text-cream/90 hover:text-whistle text-xs font-medium px-2 sm:px-2.5 py-1.5 rounded-md hover:bg-white/10 transition-colors"
             >
               <Upload size={14} />
               <span className="hidden sm:inline">Load JSON</span>
@@ -117,10 +119,10 @@ export default function App() {
             />
             <button
               onClick={handleResetAll}
-              className="flex items-center gap-1.5 bg-whistle text-pitch text-xs font-bold px-3 py-1.5 rounded-md hover:bg-white transition-colors"
+              className="flex items-center gap-1.5 bg-whistle text-pitch text-xs font-bold px-2.5 sm:px-3 py-1.5 rounded-md hover:bg-white transition-colors"
             >
               <RotateCcw size={14} />
-              Reset
+              <span className="hidden xs:inline">Reset</span>
             </button>
           </div>
         </div>
@@ -138,11 +140,12 @@ export default function App() {
         <div className="flex items-start gap-2 text-slate-muted text-[12px] bg-white/50 border border-slate-line rounded-md px-3 py-2">
           <Info size={14} className="flex-shrink-0 mt-0.5" />
           <p>
-            Drag the grip handle on any row to override its position, or click directly on a W,
+            <span className="sm:hidden">Edit W/D/L/GF/GA inline. Drag rows to reorder. Changes save automatically.</span>
+            <span className="hidden sm:inline">Drag the grip handle on any row to override its position, or click directly on a W,
             D, L, GF, or GA cell to edit it inline — points and goal difference recalculate
             automatically, and the knockout bracket updates the moment a group's order changes.
             Your changes are saved automatically and persist across reloads. Hit "Reset" to
-            return to the official group draw.
+            return to the official group draw.</span>
           </p>
         </div>
 
@@ -182,10 +185,21 @@ export default function App() {
         )}
       </main>
 
-      <footer className="max-w-[1680px] mx-auto px-4 md:px-6 py-6 text-center text-[11px] text-slate-muted">
-        Seeded from the official December 5, 2025 World Cup draw. Round of 32 third-place
-        pairings use a simplified deterministic mapping rather than FIFA's full 495-scenario
-        Annex C table. Not an official FIFA product.
+      <footer className="max-w-[1680px] mx-auto px-4 md:px-6 py-6 text-center text-[11px] text-slate-muted space-y-1">
+        <p>
+          Seeded from the official December 5, 2025 World Cup draw. Round of 32 third-place
+          pairings use a simplified deterministic mapping rather than FIFA's full 495-scenario
+          Annex C table. Not an official FIFA product.
+        </p>
+        <p>
+          &copy; {new Date().getFullYear()}{' '}
+          <a
+            href="mailto:mirzamahrabhossain@gmail.com"
+            className="hover:text-ink transition-colors"
+          >
+            Mirza Mahrab Hossain
+          </a>
+        </p>
       </footer>
     </div>
   );
