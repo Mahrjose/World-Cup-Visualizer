@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "tournament": "FIFA World Cup 2026",
+    "hosts": ["Mexico", "Canada", "United States"],
+    "generatedAt": "2026-06-17",
+    "note": "Seeded with the official Dec 5, 2025 draw. All match stats start at zero — use the sandbox to simulate group-stage results."
+  },
+  "groups": {
+    "A": [
+      { "id": "MEX", "name": "Mexico", "flag": "mx", "confederation": "CONCACAF", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "RSA", "name": "South Africa", "flag": "za", "confederation": "CAF", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "KOR", "name": "South Korea", "flag": "kr", "confederation": "AFC", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "CZE", "name": "Czech Republic", "flag": "cz", "confederation": "UEFA", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "B": [
+      { "id": "CAN", "name": "Canada", "flag": "ca", "confederation": "CONCACAF", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "BIH", "name": "Bosnia and Herzegovina", "flag": "ba", "confederation": "UEFA", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "QAT", "name": "Qatar", "flag": "qa", "confederation": "AFC", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "SUI", "name": "Switzerland", "flag": "ch", "confederation": "UEFA", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "C": [
+      { "id": "BRA", "name": "Brazil", "flag": "br", "confederation": "CONMEBOL", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "MAR", "name": "Morocco", "flag": "ma", "confederation": "CAF", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "HAI", "name": "Haiti", "flag": "ht", "confederation": "CONCACAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "SCO", "name": "Scotland", "flag": "gb-sct", "confederation": "UEFA", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "D": [
+      { "id": "USA", "name": "United States", "flag": "us", "confederation": "CONCACAF", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "PAR", "name": "Paraguay", "flag": "py", "confederation": "CONMEBOL", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "AUS", "name": "Australia", "flag": "au", "confederation": "AFC", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "TUR", "name": "Turkey", "flag": "tr", "confederation": "UEFA", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "E": [
+      { "id": "GER", "name": "Germany", "flag": "de", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "CUW", "name": "Curaçao", "flag": "cw", "confederation": "CONCACAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "CIV", "name": "Ivory Coast", "flag": "ci", "confederation": "CAF", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "ECU", "name": "Ecuador", "flag": "ec", "confederation": "CONMEBOL", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "F": [
+      { "id": "NED", "name": "Netherlands", "flag": "nl", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "JPN", "name": "Japan", "flag": "jp", "confederation": "AFC", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "TUN", "name": "Tunisia", "flag": "tn", "confederation": "CAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "SWE", "name": "Sweden", "flag": "se", "confederation": "UEFA", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "G": [
+      { "id": "BEL", "name": "Belgium", "flag": "be", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "EGY", "name": "Egypt", "flag": "eg", "confederation": "CAF", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "IRN", "name": "Iran", "flag": "ir", "confederation": "AFC", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "NZL", "name": "New Zealand", "flag": "nz", "confederation": "OFC", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "H": [
+      { "id": "ESP", "name": "Spain", "flag": "es", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "CPV", "name": "Cape Verde", "flag": "cv", "confederation": "CAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "KSA", "name": "Saudi Arabia", "flag": "sa", "confederation": "AFC", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "URU", "name": "Uruguay", "flag": "uy", "confederation": "CONMEBOL", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "I": [
+      { "id": "FRA", "name": "France", "flag": "fr", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "SEN", "name": "Senegal", "flag": "sn", "confederation": "CAF", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "IRQ", "name": "Iraq", "flag": "iq", "confederation": "AFC", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "NOR", "name": "Norway", "flag": "no", "confederation": "UEFA", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "J": [
+      { "id": "ARG", "name": "Argentina", "flag": "ar", "confederation": "CONMEBOL", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "ALG", "name": "Algeria", "flag": "dz", "confederation": "CAF", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "AUT", "name": "Austria", "flag": "at", "confederation": "UEFA", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "JOR", "name": "Jordan", "flag": "jo", "confederation": "AFC", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "K": [
+      { "id": "POR", "name": "Portugal", "flag": "pt", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "COD", "name": "DR Congo", "flag": "cd", "confederation": "CAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "UZB", "name": "Uzbekistan", "flag": "uz", "confederation": "AFC", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "COL", "name": "Colombia", "flag": "co", "confederation": "CONMEBOL", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ],
+    "L": [
+      { "id": "ENG", "name": "England", "flag": "gb-eng", "confederation": "UEFA", "pot": 1, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "CRO", "name": "Croatia", "flag": "hr", "confederation": "UEFA", "pot": 2, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "GHA", "name": "Ghana", "flag": "gh", "confederation": "CAF", "pot": 3, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 },
+      { "id": "PAN", "name": "Panama", "flag": "pa", "confederation": "CONCACAF", "pot": 4, "mp": 0, "w": 0, "d": 0, "l": 0, "gf": 0, "ga": 0, "pts": 0 }
+    ]
+  }
+}
